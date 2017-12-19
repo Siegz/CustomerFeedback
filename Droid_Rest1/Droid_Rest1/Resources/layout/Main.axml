@@ -3,18 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
-  <TableLayout
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:stretchColumns="1">
-    <Button
+    <TableLayout
+        android:background="#2579BF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+        <Button
             android:text="@string/readJson"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/readJson" />
-    <WebView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/LocalWebView" />
-  </TableLayout>
+            android:id="@+id/readJson"
+            android:background="#1cb5c4" />
+        <WebView
+            android:background="#2579BF"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/LocalWebView" />
+    </TableLayout>
 </ScrollView>

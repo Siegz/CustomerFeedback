@@ -24,16 +24,16 @@ namespace Droid_Rest1
 
             //Initializing button from layout
             Button login = FindViewById<Button>(Resource.Id.login);
-            Button blog = FindViewById<Button>(Resource.Id.blog);
 
             //Login button click action
             login.Click += (object sender, EventArgs e) => {
-                Android.Widget.Toast.MakeText(this, "Kirjautumistesti!", Android.Widget.ToastLength.Short).Show();
+                Android.Widget.Toast.MakeText(this, "Login Test!", Android.Widget.ToastLength.Short).Show();
             };
 
-            blog.Click += delegate {
-                StartActivity(typeof(MainActivity));
+            login.Click += delegate {
+                StartActivity(typeof(MenuActivity));
             };
+
         }
     }
 }

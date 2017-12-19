@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="ApplicationName">Blogitest</string>
-    <string name="readJson">Lataa Blogi</string>
+    <string name="readJson">Load Blog</string>
+    <string name="readJson2">Get Latest Request</string>
+    <string name="sendData">Send  Technical Request</string>
+    <string name="sendData2">Send Feedback</string>
 </resources>

@@ -38,7 +38,7 @@ namespace Droid_Rest1
                 using (var client = new HttpClient())
                 {
                     // send a GET request
-                    var uri = "http://www.devatus.fi/wp-json/wp/v2/posts";
+                    var uri = "http://www.devatus.fi/wp-json/wp/v2/posts?per_page=50";
                     var result = await client.GetStringAsync(uri);
 
                     //handling the answer
@@ -46,10 +46,10 @@ namespace Droid_Rest1
 
                     // generate the output
                     // test two posts
-                    var post =posts.First();
-                    var post2 = posts.Last();
+                    //var post =posts.First();
+                    //var post2 = posts.Last();
                     //textView.Text = "Blogiviestit:\n\n" + post + post2;
-                    localWebView.LoadData(post.ToString() + post2.ToString(), "text/html", null);
+                    localWebView.LoadData(posts[0].ToString() + posts[2].ToString() + posts[4].ToString() + posts[6].ToString() + posts[8].ToString(), "text/html", null);
                 }
             };
 
